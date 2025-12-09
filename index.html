@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leskuyy</title>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/feather-icons"></script>
   </head>
+
   <body>
     <!-- navbar start-->
     <nav class="navbar">
       <a href="#" class="navbar-logo">Les<span>kuyy</span></a>
 
       <div class="navbar-nav">
-        <a href="#homw">Home</a>
+        <a href="#home">Home</a>
         <a href="#menu-section">Menu</a>
         <a href="contact">Kontak</a>
         <a href="#about">Tentang kami</a>
@@ -30,13 +30,50 @@
         <a href="#" id="search"><i data-feather="search"></i></a>
         <a href="#" id="Pesan"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
-        <!-- toggle -->
       </div>
     </nav>
     <!-- navbar end-->
 
-    <!-- hero section start -->
+    <!-- sub-menu start-->
+    <nav class="subject-menu" id="subject-menu">
+      <a href="#sd">SD</a>
+      <a href="#smp">SMP</a>
+      <a href="#sma">SMA</a>
+      <a href="#basic-skills">Basic Skills</a>
+      <a href="#utbk">UTBK</a>
+      <a href="#tka-sma">TKA SMA</a>
+      <a href="#ujian-mandiri">Ujian Mandiri</a>
+    </nav>
+    <!-- sub-menu end-->
+
+    <!-- hero start -->
     <section class="hero" id="home">
+      <!-- SLIDER -->
+      <div class="slider">
+        <div class="slide active">
+          <img src="img/ump.jpg" alt="" />
+          <p class="caption">Murid Leskuyy masuk PTN ternama</p>
+        </div>
+
+        <div class="slide">
+          <img src="img/ump2.jpg" alt="" />
+          <p class="caption">Belajar intensif bersama mentor terbaik</p>
+        </div>
+
+        <div class="slide">
+          <img src="img/ump3.jpg" alt="" />
+          <p class="caption">Kelas premium terjangkau</p>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        <!-- DOTS -->
+        <div class="dots"></div>
+      </div>
+
+      <!-- TEXT CONTENT -->
       <main class="content">
         <h1>Menjadi cerdas dengan menjadi bagian dari Les<span>kuyy</span></h1>
         <p>
@@ -45,13 +82,38 @@
         <a href="#" class="cta">Ayo bergabung</a>
       </main>
     </section>
-    <!-- hero section end -->
+    <!-- hero end -->
 
+    <!-- about -->
+    <section id="about" class="about">
+      <h2>Tentang<span> kami</span></h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/ump.jpg" alt="Tentang Kami" />
+        </div>
+
+        <div class="content">
+          <h3>Kenapa belajar disini?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            asperiores aliquam, corporis eos molestiae similique.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut
+            quasi expedita, impedit voluptatibus soluta ducimus et quis
+            quibusdam rerum!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feather Icon Library-->
+    <script src="https://unpkg.com/feather-icons"></script>
     <script>
       feather.replace();
     </script>
 
-    <!-- js -->
     <script src="js/script.js"></script>
   </body>
 </html>
